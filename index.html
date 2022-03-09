@@ -125,7 +125,17 @@
 		<ol>
 			<lin>Velkommen til min nettside!</lin>
 		</ol>		
-		<p>Hva <em>skal</em> det stå her da?</p>
+		<p id="copy">This is the copy string!</p>
+<button type="button" onclick="copyEvent('copy')">Copy</button>
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/5bOkWTprifg" frameborder="0" allowfullscreen></iframe>
 		<div id="boks"></div>
 		<p>Kontakt <strong>eieren</strong> på <a href="mailto:alekal07@tysverelev.no">alekal07@tysverelev.no</a></p>
