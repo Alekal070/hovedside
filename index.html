@@ -4,6 +4,15 @@
 		<title>Aleksander's Nettside</title>
 		<style>
 
+.unselectable {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #000;
+      }
+
     #boks {
         height: 50px;
         width: 100px;
@@ -104,6 +113,7 @@
 		</style>
 	</head>
 	<body> 
+		<div class="unselectable">
 		<a href="info.html"><button>Info</button></a>
 		<a href="login.html"><button>Login</button></a>
 		<h1>Aleksander's Nettside</h1> 
@@ -134,5 +144,6 @@
 			<label for="dårlig"> Dårlig</label><br><br>
 			<input type="submit" value="Send inn">
 		  </form>
+		</div>
 	</body>
 </html>
