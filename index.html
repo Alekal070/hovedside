@@ -1,4 +1,4 @@
-<html>
+<html> // Linker https://www.freesoundslibrary.com/ og https://www.w3schools.com/howto/howto_css_download_button.asp
 	<html lang="no"></html>
 	<head>
 		<title>Aleksander's Nettside</title>
@@ -50,8 +50,8 @@
 			}
 
 			img {
-  border: 5px solid #555;
-}
+				border: 5px solid #555;
+			}
 
 			h1 {
 				color: rgb(70, 209, 214);
@@ -100,6 +100,12 @@
   animation-iteration-count: infinite;
 }
 
+button:hover {
+  animation: shake 2s;
+
+  animation-iteration-count: infinite;
+}
+
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -112,6 +118,35 @@
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+button {
+  animation: wiggle 2s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
 }
 
 		</style>
@@ -129,16 +164,6 @@
 		<ol>
 			<lin>Velkommen til min nettside!</lin>
 		</ol>		
-		<p id="copy">This is the copy string!</p>
-<button type="button" onclick="copyEvent('copy')">Copy</button>
-
-<script>
-    function copyEvent(id)
-    {
-        var str = document.getElementById(id);
-        window.getSelection().selectAllChildren(str);
-        document.execCommand("Copy")
-    }
 </script>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/5bOkWTprifg" frameborder="0" allowfullscreen></iframe>
 		<div id="boks"></div>
