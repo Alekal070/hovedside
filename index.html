@@ -1,4 +1,4 @@
-<html> // Linker https://www.freesoundslibrary.com/ og https://www.w3schools.com/howto/howto_css_download_button.asp
+<html>
 	<html lang="no"></html>
 	<head>
 		<title>Aleksander's Nettside</title>
@@ -125,6 +125,10 @@ button {
   animation-delay: 5s;
 }
 
+button:hover {
+	background-color:#555;
+}
+
 @keyframes wiggle {
   0%, 7% {
     transform: rotateZ(0);
@@ -180,6 +184,6 @@ button {
 			<label for="dårlig"> Dårlig</label><br><br>
 			<input type="submit" value="Send inn">
 		  </form>
-		</div>
+		  <button class="btn" style="width:100%"><i class="fa fa-download"></i> Download</button>
 	</body>
 </html>
